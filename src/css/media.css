@@ -1,0 +1,464 @@
+/*Медиазапросы*/
+@media (min-width: 1200px) and (max-width: 9999px) {
+    .container {
+        max-width: 1220px;
+    }
+}
+
+@media (max-width: 1599px){
+    menu{
+        padding-left: 200px;
+    }
+
+    menu li a {
+        line-height: 1.9;
+    }
+}
+
+@media (max-width: 1439px){
+    menu{
+        padding-left: 175px;
+    }
+    menu li a {
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 1365px){
+    menu{
+        padding-left: 150px;
+    }
+
+    menu li a {
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 1199px) {
+    menu {
+        padding-left: 100px;
+    }
+
+    menu li a {
+        line-height: 1.6;
+    }
+
+    .main__head {
+        margin-top: 70px;
+    }
+
+    .main__head h1 {
+        font-size: 70px;
+    }
+
+    .main__slag p {
+        font-size: 35px;
+    }
+
+    .second {
+        padding: 150px 0 0;
+    }
+
+    .second__head h2 {
+        font-size: 65px;
+    }
+
+    .make {
+        margin: 150px 0;
+    }
+
+    .make:nth-child(1) {
+        margin-top: 100px;
+    }
+
+    .make:nth-child(2n) .make__info {
+        padding-left: 75px;
+    }
+
+    .make__info_numb {
+        font-size: 35px;
+    }
+
+    .make__info_head h3 {
+        font-size: 45px;
+    }
+
+    .make__info_text p {
+        font-size: 20px;
+    }
+
+    .make__imag {
+        min-height: 395px;
+    }
+
+    .third {
+        padding: 145px 0 75px;
+    }
+
+    .third__head h2 {
+        font-size: 65px;
+    }
+
+    .wherefore__info {
+        width: calc(33.3333% - 25px);
+    }
+
+    .wherefore__info_icon {
+        min-height: 282px;
+    }
+
+    .wherefore__info_head h4 {
+        font-size: 30px;
+    }
+
+    .wherefore__info_text p {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 120px 0 55px;
+    }
+
+    .footer__info_text {
+        max-width: 600px;
+    }
+
+    .footer__info_link {
+        width: calc(100% - 600px);
+    }
+}
+
+@media (max-width: 991px) {
+
+    menu {
+        width: 70%;
+        right: -70%;
+    }
+
+    .sticky__header {
+        min-height: 90px;
+    }
+
+    .main__head {
+        margin-top: 50px;
+    }
+
+    .main__head h1 {
+        font-size: 60px;
+    }
+
+    .main__slag p {
+        font-size: 30px;
+    }
+
+    .second {
+        padding: 100px 0 0;
+    }
+
+    .second__head h2 {
+        font-size: 55px;
+    }
+
+    .make:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    .make:nth-child(2n) .make__info {
+        padding-left: 60px;
+    }
+
+    .make {
+        margin: 75px 0;
+    }
+
+    .make__info_numb {
+        font-size: 30px;
+        margin-top: -5px;
+    }
+
+    .make__info_head h3 {
+        font-size: 35px;
+    }
+
+    .make__info_text p {
+        font-size: 18px;
+    }
+
+    .make__imag {
+        min-height: 375px;
+    }
+
+    .third {
+        padding: 100px 0 50px;
+    }
+
+    .third__head h2 {
+        font-size: 55px;
+    }
+
+    .wherefore__info {
+        width: calc(33.3333% - 15px);
+    }
+
+    .wherefore__info_icon {
+        min-height: 211px;
+    }
+
+    .wherefore__info_head {
+        margin-top: 70px;
+    }
+
+    .wherefore__info_head h4 {
+        font-size: 25px;
+    }
+
+    .wherefore__info_text p {
+        font-size: 18px;
+        line-height: inherit;
+    }
+
+    footer {
+        padding: 100px 0 50px;
+    }
+
+    .footer__info_text {
+        max-width: 400px;
+    }
+
+    .footer__info_link {
+        width: calc(100% - 400px);
+    }
+}
+
+@media (max-width: 767px) {
+    menu {
+        padding-left: 75px;
+    }
+
+    menu li a {
+        line-height: 1.6;
+        font-size: 30px;
+    }
+
+    .sticky__header {
+        min-height: 80px;
+    }
+
+    .main__head {
+        margin-top: 30px;
+    }
+
+    .main__head h1 {
+        font-size: 50px;
+    }
+
+    .main__slag p {
+        font-size: 25px;
+    }
+
+    .second {
+        padding: 75px 0 0;
+    }
+
+    .second__head h2 {
+        font-size: 45px;
+    }
+
+    .make {
+        flex-direction: column-reverse;
+    }
+
+    .make:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .make__imag {
+        max-width: 100%;
+    }
+
+    .make__info_numb {
+        margin-top: 35px;
+    }
+
+    .make__info {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .make:nth-child(2n) .make__info {
+        padding-left: 0;
+    }
+
+    .third {
+        padding: 75px 0 50px;
+    }
+
+    .third__head h2 {
+        font-size: 45px;
+    }
+
+    .wherefore__info_icon {
+        min-height: 152px;
+    }
+
+    .wherefore__info_head {
+        margin-top: 50px;
+    }
+
+    .wherefore__info_head h4 {
+        font-size: 20px;
+    }
+
+    .wherefore__info_text p {
+        font-size: 16px;
+    }
+
+    .start__link {
+        margin: 50px auto 0;
+    }
+
+    footer {
+        padding: 75px 0 50px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .footer__info_text {
+        max-width: 100%;
+    }
+
+    .footer__info_link {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer__info_link-logo {
+        margin-top: 40px;
+    }
+
+    .footer__info_link-copy {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    header{
+        min-height: 70px;
+    }
+
+    .sticky__header {
+        min-height: 70px;
+        padding: 0 20px;
+    }
+
+    menu {
+        width: 100%;
+        right: -100%;
+        padding-left: 20px;
+    }
+
+
+    .top__line {
+        padding: 0;
+    }
+
+    .top__line_menu {
+        right: 0;
+    }
+
+    .main__head {
+        margin-top: 20px;
+    }
+
+    .main__head h1 {
+        font-size: 40px;
+    }
+
+    .main__slag p {
+        font-size: 22px;
+    }
+
+    .arrow {
+        bottom: 40px;
+    }
+
+    .second {
+        padding: 50px 0 0;
+    }
+
+    .second__head h2 {
+        font-size: 35px;
+    }
+
+    .make__imag {
+        min-height: 275px;
+    }
+
+    .make__info_head h3 {
+        font-size: 25px;
+    }
+
+    .make__info_text p {
+        font-size: 16px;
+    }
+
+    .make {
+        margin: 45px 0;
+    }
+
+    .third {
+        padding: 50px 0 50px;
+    }
+
+    .third__head h2 {
+        font-size: 35px;
+    }
+
+    .wherefore {
+        flex-direction: column;
+        margin-top: 45px;
+    }
+
+    .wherefore__info {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .wherefore__info_icon {
+        min-height: 200px;
+    }
+
+    footer {
+        padding: 50px 0 50px;
+    }
+
+    .footer__info_text-mail a {
+        font-size: 25px;
+    }
+
+    .start__link {
+        margin: 0;
+    }
+
+    .footer__info_link-logo {
+        margin-top: 35px;
+    }
+
+    .footer__info_link-link {
+        margin-top: 35px;
+    }
+
+    .footer__info_link-copy {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 360px) {
+
+}
