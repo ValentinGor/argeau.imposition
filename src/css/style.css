@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
 }
 
-.container-fluid{
+.container-fluid {
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -59,6 +59,11 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
+}
+
+.top__line_logo a img {
+    width: 204px;
+    height: auto;
 }
 
 .top__line_menu {
@@ -431,6 +436,12 @@ footer {
     color: var(--color-light);
     line-height: 1.2;
     text-decoration: none;
+    transition: ease 300ms;
+}
+
+.footer__info_text-mail a:hover {
+    color: var(--color-blue);
+    transition: ease 300ms;
 }
 
 .footer__info_text-addr {
@@ -443,6 +454,12 @@ footer {
 .footer__info_text-addr a {
     color: var(--color-link);
     text-decoration: none;
+    transition: ease 300ms;
+}
+
+.footer__info_text-addr a:hover {
+    color: var(--color-blue);
+    transition: ease 300ms;
 }
 
 .footer__info_text-post {
@@ -471,6 +488,15 @@ footer {
     margin-right: 25px;
 }
 
+.footer__info_link-link a:hover {
+    text-decoration: none;
+}
+
+.footer__info_link-link a:hover svg path {
+    fill: var(--color-blue);
+    transition: ease 300ms;
+}
+
 .footer__info_link-link a:last-child {
     margin-right: 0;
 }
@@ -482,26 +508,7 @@ footer {
     line-height: 1.2;
 }
 
-/*menu style*/
-/*.container{*/
-/*    filter: blur(4px);*/
-/*}*/
-
-/*.overlay {*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    min-height: 100vh;*/
-/*    display: block;*/
-/*    background: var(--color-dark);*/
-/*    opacity: .5;*/
-
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    z-index: 3;*/
-/*}*/
-
-menu {
+.menu {
     width: 50%;
     height: auto;
     min-height: 100vh;
@@ -523,18 +530,23 @@ menu {
     transition: ease 300ms;
 }
 
-menu.active {
+.menu.active {
     right: 0;
     transition: ease 300ms;
 }
 
-menu li {
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-menu li a {
+.menu li a {
     position: relative;
     font-size: 40px;
     color: var(--color-grey);
@@ -542,7 +554,7 @@ menu li a {
     transition: ease 300ms;
 }
 
-menu li a:before {
+.menu li a:before {
     content: url('../img/ico-arrow.svg');
     position: absolute;
     top: 0;
@@ -556,13 +568,13 @@ menu li a:before {
     height: 49px;
 }
 
-menu li a:hover{
+.menu li a:hover {
     text-decoration: none;
     color: var(--color-white);
     transition: ease 300ms;
 }
 
-menu li a:hover:before{
+.menu li a:hover:before {
     opacity: 1;
     transition: ease 300ms;
 }
@@ -583,7 +595,7 @@ menu li a:hover:before{
     transition: ease 300ms;
 }
 
-.sticky__header.fix{
+.sticky__header.fix {
     top: 0;
     transition: ease 300ms;
 }

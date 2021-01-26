@@ -1,7 +1,13 @@
 // Плавный скролл
 $(document).ready(function(){
-    $("#scroll__bot").on("click","a", function (event) {
-        event.preventDefault();
+    $("#scroll__bot").on("click","a", function () {
+        let id  = $(this).attr('href');
+        let top = $(id).offset().top;
+
+        //анимируем переход 1000 мс
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+    $("#menu").on("click","a", function () {
         let id  = $(this).attr('href');
         let top = $(id).offset().top;
 
@@ -33,3 +39,16 @@ $(window).scroll(function(){
         $('.sticky__header').removeClass('fix');
     }
 })
+
+// Анимация при скролле
+wow = new WOW(
+    {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+    }
+)
+wow.init();
+
